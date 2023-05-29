@@ -1,0 +1,53 @@
+@import 'breakpoints';
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+
+  span {
+    display: block;
+    font-size: 0.7rem;
+    width: rem(35);
+    text-align: center;
+    color: var(--brown);
+    margin-top: rem(15);
+  }
+
+  &__data {
+    p {
+      background-color: var(--dark);
+      padding: 0.05rem;
+      color: var(--pale);
+      font-size: 0.65rem;
+      border-radius: rem(5);
+      text-align: center;
+      margin-bottom: rem(5);
+    }
+  }
+
+  &__bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__bar {
+    border-radius: rem(5);
+    width: rem(35);
+    background-color: var(--red);
+    cursor: pointer;
+
+    &:hover {
+      background-color: hsla(10, 79%, 65%, 0.8);
+    }
+  }
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
