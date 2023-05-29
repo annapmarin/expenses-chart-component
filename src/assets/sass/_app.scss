@@ -27,7 +27,7 @@ hr {
   margin: 1rem;
 
   @include md {
-    width: rem(600);
+    width: rem(550);
   }
 
   &__header {
@@ -48,6 +48,10 @@ hr {
   &__title {
     font-size: 1.4rem;
     font-weight: 700;
+
+    @include md {
+      font-size: 1.6rem;
+    }
   }
 
   &__logo {
@@ -73,6 +77,10 @@ hr {
     color: var(--brown);
     font-size: .9rem;
 
+    @include md {
+      font-size: 1.1rem;
+    }
+
     span {
       color: var(--dark);
       font-weight: 700;
@@ -95,5 +103,9 @@ hr {
   &__total {
     font-size: 1.8rem;
     font-weight: 700;
+
+    @include md {
+      font-size: 2.5rem;
+    }
   }
 }

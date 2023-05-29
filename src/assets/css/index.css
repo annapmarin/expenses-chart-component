@@ -26,7 +26,7 @@ hr {
 }
 @media (min-width: 768px) {
   .container {
-    width: 33.3333333333rem;
+    width: 30.5555555556rem;
   }
 }
 .container__header {
@@ -45,6 +45,11 @@ hr {
 .container__title {
   font-size: 1.4rem;
   font-weight: 700;
+}
+@media (min-width: 768px) {
+  .container__title {
+    font-size: 1.6rem;
+  }
 }
 .container__logo {
   max-width: 4.4444444444rem;
@@ -66,6 +71,11 @@ hr {
   color: var(--brown);
   font-size: 0.9rem;
 }
+@media (min-width: 768px) {
+  .container__stats {
+    font-size: 1.1rem;
+  }
+}
 .container__stats span {
   color: var(--dark);
   font-weight: 700;
@@ -85,6 +95,11 @@ hr {
   font-size: 1.8rem;
   font-weight: 700;
 }
+@media (min-width: 768px) {
+  .container__total {
+    font-size: 2.5rem;
+  }
+}
 
 .chart {
   display: flex;
@@ -99,6 +114,11 @@ hr {
   color: var(--brown);
   margin-top: 0.8333333333rem;
 }
+@media (min-width: 768px) {
+  .chart span {
+    width: 2.7777777778rem;
+  }
+}
 .chart__data p {
   background-color: var(--dark);
   padding: 0.05rem;
@@ -107,6 +127,12 @@ hr {
   border-radius: 0.2777777778rem;
   text-align: center;
   margin-bottom: 0.2777777778rem;
+}
+@media (min-width: 768px) {
+  .chart__data p {
+    padding: 0.2rem;
+    font-size: 0.8rem;
+  }
 }
 .chart__bars {
   display: flex;
@@ -118,6 +144,11 @@ hr {
   width: 1.9444444444rem;
   background-color: var(--red);
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .chart__bar {
+    width: 2.7777777778rem;
+  }
 }
 .chart__bar:hover {
   background-color: hsla(10, 79%, 65%, 0.8);

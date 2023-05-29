@@ -14,7 +14,7 @@ export default function Chart() {
     if (index === highestAmountIndex && hoveredBar === index) {
       return {
         ...baseStyle,
-        backgroundColor: "var(--cyan)",
+        backgroundColor: "hsla(186, 34%, 60%, 0.8)",
       };
     }
 
